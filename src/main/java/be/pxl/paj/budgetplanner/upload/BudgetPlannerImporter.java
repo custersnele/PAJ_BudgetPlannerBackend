@@ -27,10 +27,12 @@ public class BudgetPlannerImporter {
 	private static final Logger LOGGER = LogManager.getLogger(BudgetPlannerImporter.class);
 	private static final PathMatcher CSV_MATCHER = FileSystems.getDefault().getPathMatcher("glob:**/*.csv");
 
-	@Autowired
+	// UNCOMMENT WHEN POSSIBLE
+	//@Autowired
 	private AccountRepository accountRepository;
 
-	@Autowired
+	// UNCOMMENT WHEN POSSIBLE
+	//@Autowired
 	private CategoryRepository categoryRepository;
 
 	@Async
